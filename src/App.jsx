@@ -1,6 +1,7 @@
 import React from 'react'
 import Login from './components/Login'
 import { BrowserRouter } from 'react-router-dom';
+import "./index.css";
 
 const isStandalone = !window.__POWERED_BY_HOST__; 
 
