@@ -2,8 +2,6 @@ import { create } from "zustand";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-
-
 /**
  * Creates a Zustand store to handle user actions and state updates.
  */
@@ -22,8 +20,6 @@ const loginStore = create((set, get) => ({
    */
   async authenticateUser(formData) {
     set({ loginLoader: true });
-
-    console.log("in login auth");
     
     try {
       const response = await axios.post(

@@ -18,6 +18,5 @@ export const handlePasswordChange = ({ e, field }) => {
   if (e.target.value) {
     e.target.value = e.target.value.replace(/\s/g, "");
   }
-
   field.onChange(e);
 };
